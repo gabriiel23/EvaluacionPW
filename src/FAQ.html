@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Preguntas Frecuentes</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="icon" href="https://i.pinimg.com/originals/e3/d1/04/e3d104d24a4a474c83d1964f78925015.png">
+</head>
+<body class="bg-[#faecca]">
+
+    <script>
+        AOS.init();
+    </script>
+    
+    <nav class="bg-[#faecca] shadow-md">
+        <div class="container mx-auto px-36 py-4 flex items-center justify-between">
+
+            <ul data-aos="fade-up" class="flex space-x-8">
+                <li><a href="index.html" class="text-black hover:text-gray-600 font-semibold font-serif text-lg">Inicio</a></li>
+                <li><a href="index.html" class="text-black hover:text-gray-600 font-semibold font-serif text-lg">Colección</a></li>
+            </ul>
+            
+            <div data-aos="fade-down" class="absolute left-1/2 transform -translate-x-1/2">
+                <a href="index.html">
+                    <img src="../fotos/logo.jpg" alt="Logo" class="rounded-lg h-16 w-32">
+                </a>
+            </div>
+    
+            <div data-aos="fade-up">
+                <button class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-600">Preguntas Frecuentes</button>
+            </div>
+        </div>
+    </nav>
+
+    <h1 data-aos="flip-left" class="font-serif text-6xl text-center py-12">- Preguntas Frecuentes -</h1>
+
+    <hr class="border-black w-[80%] mx-auto">
+
+    <ul class="font-serif text-center py-12 px-40">
+
+        <li data-aos="fade-right" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Cuáles son los métodos de pago aceptados?</div>
+            <div class="answer text-lg">Aceptamos tarjetas de crédito y débito, PayPal, y transferencias bancarias.</div>
+        </li>
+
+        <li data-aos="fade-left" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Cuánto tiempo tarda el envío?</div>
+            <div class="answer text-lg">Los tiempos de envío varían según la ubicación, pero generalmente los pedidos se entregan en un plazo de 3 a 7 días hábiles.</div>
+        </li>
+
+        <li data-aos="fade-right" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Cómo puedo rastrear mi pedido?</div>
+            <div class="answer text-lg">Después de realizar el pedido, recibirás un correo electrónico con un número de seguimiento y un enlace para rastrear el estado de tu envío.</div>
+        </li>
+
+        <li data-aos="fade-left" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Cuál es su política de devoluciones?</div>
+            <div class="answer text-lg">Aceptamos devoluciones dentro de los 30 días posteriores a la compra, siempre que los artículos estén en su estado original y con las etiquetas intactas.</div>
+        </li>
+
+        <li data-aos="fade-right" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Puedo cambiar un artículo por otro?</div>
+            <div class="answer text-lg">Sí, ofrecemos cambios por un tamaño o color diferente dentro de los 30 días posteriores a la compra.</div>
+        </li>
+
+        <li data-aos="fade-left" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Tienen una guía de tallas?</div>
+            <div class="answer text-lg">Sí, cada producto tiene una guía de tallas específica que puedes consultar para asegurarte de elegir el tamaño correcto.</div>
+        </li>
+
+        <li data-aos="fade-right" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Ofrecen tarjetas de regalo?</div>
+            <div class="answer text-lg">Sí, tenemos tarjetas de regalo disponibles en diferentes denominaciones que pueden ser canjeadas en nuestra tienda en línea.</div>
+        </li>
+
+        <li data-aos="fade-left" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Cómo puedo contactar con el servicio al cliente?</div>
+            <div class="answer text-lg">Puedes contactarnos a través del correo electrónico soporte@tiendaropa.com o llamando al 123-456-7890.</div>
+        </li>
+
+        <li data-aos="fade-right" class="py-2">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Ofrecen descuentos o promociones?</div>
+            <div class="answer text-lg">Sí, regularmente ofrecemos descuentos y promociones. Puedes suscribirte a nuestro boletín para recibir las últimas ofertas y noticias.</div>
+        </li>
+
+        <li data-aos="fade-left" class="py-2 pb-10">
+            <div class="question text-xl font-semibold hover:cursor-pointer pb-2">¿Puedo cancelar o modificar mi pedido?</div>
+            <div class="answer text-lg">Si necesitas cancelar o modificar tu pedido, contáctanos lo antes posible. Haremos lo posible por ayudarte, aunque no podemos garantizar cambios si el pedido ya ha sido procesado.</div>
+        </li>
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var questions = document.querySelectorAll('.question');
+            questions.forEach(function(question) {
+                question.addEventListener('click', function() {
+                    var answer = this.nextElementSibling;
+                    if (answer.style.display === 'none' || answer.style.display === '') {
+                        answer.style.display = 'block';
+                    } else {
+                        answer.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
